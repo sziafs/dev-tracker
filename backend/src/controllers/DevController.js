@@ -37,5 +37,23 @@ module.exports = {
     }
 
     return res.json(dev);
+  },
+
+  async update(req, res) {
+    const { github_username, techs, latitude, longitude } = req.body;
+
+    let dev = await Dev.findOne({ github_username });
+
+    if (dev) {
+      dev = await Dev.updateOne({
+        techs,
+        latitude,
+        longitude
+      });
+    } else {
+      return res.json({ error: "Developer not registered" });
+    }
+
+    return res.json({status: `User ${github_username} updated`});
   }
 }
