@@ -16,7 +16,7 @@ module.exports = {
 
       return res.json(dev);
     } catch (err) {
-      return res.json({ error: err })
+      return res.json({ error: err });
     }
   },
 
@@ -70,4 +70,15 @@ module.exports = {
 
     return res.json({ status: `User ${github_username} updated` });
   },
+
+  async destroy (req, res) {
+    try {
+      const { id } = req.params;
+      await Dev.findByIdAndDelete(id);
+
+      return res.json({status: `User with id ${id} has been deleted`});
+    } catch (err) {
+      return res.json({ error: err });
+    }
+  }
 }
