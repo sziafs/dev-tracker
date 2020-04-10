@@ -1,3 +1,7 @@
+<h1 align="center">
+    <img alt="devTracker" title="#dev-tracker" src="./frontend/src/assets/dev-tracker-logo.svg" width="250px" />
+</h1>
+
 <h4 align="center">
   🚀 A Web-Mobile application to find developers around you!
 </h4>
@@ -26,7 +30,7 @@
 <br>
 
 <p align="center">
-  <img alt="devTracker" src="frontend/src/assets/devTracker.png" width="100%">
+  <img alt="devTracker" src="frontend/src/assets/dev-tracker.png" width="100%">
 </p>
 
 ## :page_with_curl: About
