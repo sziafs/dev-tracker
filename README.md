@@ -33,7 +33,7 @@
 
 This project is part of a free code week mentored by [Rocketseat](https://rocketseat.com.br/).
 
-This is an application where developers could register their github username, and them find other developers that are around them, filtering by distance and programming languages.
+This is an application where developers could register their github username, and next find other developers that are around them, filtering by distance and programming languages.
 
 ## :wrench: Built With
 
